@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment booking system</title>
+</head>
+<link rel="stylesheet" href="css/stylesheet">
+<style>
+    body {
+        
+        font-family: cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/dtr.jpg');
+    }
+    .left{
+        position: absolute;
+        left:40px;
+        top:20px;
+        /*border: 2px solid black;
+        background-color: white;*/
+        color:black;
+        display: inline-block;
+    }
+    .left img{
+        width: 100px;
+    }
+    .left div{
+        line-height: 8px;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+    .mid{
+        display: block;
+        width: 55%;
+        margin: 18px auto;
+       /* border: 2px solid black;
+        border-radius: 5px;
+        background-color: white;*/
+        color: black;
+        font-size: 11px;
+    }
+    .right{
+        position: absolute;
+        right: 24px;
+        top: 43px;
+       /* border: 2px solid blue;
+        border-radius: 8px;
+        background-color: aqua;*/
+        color: black;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: black;
+        text-decoration: none;
+        padding: 34px 24px;
+    }
+    .navbar li a :hover,
+    .navbar li a :active {
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        font-family: cursive;
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border-radius: 8px;
+        /*background-color: black;*/
+        color: black;
+        /*border: 2px solid blue;*/
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .btn :hover{
+        background-color: gray;
+        text-decoration: underline;
+    }
+    .container{
+       /* border: 2px solid black;*/
+        position: absolute;
+        top: 250px;
+        left: 50px;
+       /* background-color: bisque;*/
+        color: black;
+        margin: 2px 2px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        width: 35%;
+        font-size: 12px;
+    }
+    .form-group input{
+        text-align:center ;
+        display: block;
+        width: 234px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 8px auto;
+        font-size: 14px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    .container h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        margin: 15px auto;
+        width: 234px;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/dr.jpg" alt="">
+            <div>Emergency-24*7</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Doctor Appointment</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email...</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h2>Follow me for fast treatment.....</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Contact no.">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Disease">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder=" your age">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
